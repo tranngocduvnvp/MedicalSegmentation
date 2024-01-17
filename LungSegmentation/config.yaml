@@ -1,0 +1,18 @@
+root: /home/bigdata/Documents/TND_Modeling/dataset
+epochs: 300
+batch_size: 16
+dataset: Lungsegment
+model_name:
+  name: Unext
+  version: QuantizableUNext_T2
+mgpu: "false"
+lrs_min: 0.000001
+lrs: "true"
+lr: 0.0001
+type_lr: StepLR
+checkpoint_path: null
+encoder_block: DSMNet
+optim: NAdam
+img_size: 256
+mini_batch: 16
+checkpoint_path: /home/bigdata/Documents/TND_Modeling/Trained models/Lungsegment_QuantizableUNext_T2.pt
